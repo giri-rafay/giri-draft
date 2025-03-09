@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  annotations:
+    rafay.dev/audit_type: CLI||RCTL/r3.2.0 darwin/amd64
+    rafay.dev/audit_user: giridharaprasad@rafay.co
+    rafay.dev/audit_user_group: All Local Users,Organization Admins
+  name: cli-addon-0
+  project: giri-may
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://http-sw-app-fail.yaml
+    type: Yaml
+  namespace: cli-draft-addon
+  sharing: {}
+  version: v1
+  versionState: active
