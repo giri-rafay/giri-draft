@@ -2,10 +2,10 @@ apiVersion: infra.k8smgmt.io/v3
 kind: Addon
 metadata:
   annotations:
-    rafay.dev/audit_type: GIT||GitSync
+    rafay.dev/audit_type: CLI||RCTL/r3.2.0 darwin/amd64
     rafay.dev/audit_user: giridharaprasad@rafay.co
-    rafay.dev/audit_user_group: ""
-  name: git-addon-0
+    rafay.dev/audit_user_group: All Local Users,Organization Admins
+  name: cli-addon-1
   project: giri-may
 spec:
   artifact:
@@ -13,7 +13,7 @@ spec:
       paths:
       - name: file://http-sw-app-fail.yaml
     type: Yaml
-  namespace: git-draft-addon
+  namespace: cli-draft-addon
   sharing: {}
   version: v1
-  versionState: active
+  versionState: draft
