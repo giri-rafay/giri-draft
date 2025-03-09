@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: git-addon-0
+  project: giri-may
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://http-sw-app-fail.yaml
+    type: Yaml
+  namespace: git-draft-addon
+  sharing: {}
+  version: v1
+  versionState: active
